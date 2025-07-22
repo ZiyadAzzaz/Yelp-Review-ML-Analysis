@@ -105,7 +105,7 @@ model.fit(X_train, y_train)
 ---
 
 ## 📊 Evaluation Results
-This Report After we make our starts into 2 Classes
+This Report After we make our stars into 2 Classes
 ```
 Classification Report:
               precision    recall  f1-score   support
