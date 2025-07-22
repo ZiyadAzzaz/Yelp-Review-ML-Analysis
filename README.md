@@ -40,14 +40,17 @@ This project focuses on analyzing the **Yelp business reviews dataset** and buil
 
 The entire analysis is framed in a business context to support customer satisfaction insights, rating reliability, and feedback value.
 
+
+👉 **[View the Full Notebook Here](https://github.com/ZiyadAzzaz/Yelp-Review-ML-Analysis/blob/main/ML.ipynb)**
+
 ---
 
 ## 📊 Dataset
 
-The dataset (\`yelp.csv\`) includes:
-- \`text\`: Raw review content (used for NLP)
-- \`stars\`: Target variable (rating from 1 to 5 stars)
-- Other features like \`cool\`, \`useful\`, \`funny\` (can be explored for advanced models)
+The dataset (`yelp.csv`) includes:
+- `text`: Raw review content (used for NLP)
+- `stars`: Target variable (rating from 1 to 5 stars)
+- Other features like `cool`, `useful`, `funny` (can be explored for advanced models)
 
 ---
 
@@ -56,22 +59,22 @@ The dataset (\`yelp.csv\`) includes:
 - 💻 **Language**: Python  
 - 📒 **Platform**: Jupyter Notebook  
 - 📚 **Libraries**:
-  - \`pandas\`, \`numpy\`
-  - \`matplotlib\`, \`seaborn\`
-  - \`scikit-learn\`
+  - `pandas`, `numpy`
+  - `matplotlib`, `seaborn`
+  - `scikit-learn`
 
 ---
 
 ## ⚙️ ML Pipeline
 
 1. **Text Vectorization**
-   - Used \`TfidfVectorizer(max_features=5000)\` on the review text column.
+   - Used `TfidfVectorizer(max_features=5000)` on the review text column.
 2. **Model Building**
-   - Trained a \`LogisticRegression(max_iter=1000)\` classifier.
+   - Trained a `LogisticRegression(max_iter=1000)` classifier.
 3. **Model Evaluation**
-   - Used \`train_test_split\` with 80/20 ratio
+   - Used `train_test_split` with 80/20 ratio
    - Evaluated with accuracy and classification report
-   - Used \`cross_val_score\` with 5-fold cross-validation
+   - Used `cross_val_score` with 5-fold cross-validation
 
 ---
 
@@ -79,7 +82,7 @@ The dataset (\`yelp.csv\`) includes:
 
 - Cleaned text column (removed nulls, punctuation, stopwords)
 - Applied **TF-IDF vectorization**
-- Merged with numeric columns like \`cool\`, \`useful\` (optional extended version)
+- Merged with numeric columns like `cool`, `useful` (optional extended version)
 - Reduced dimensionality by limiting TF-IDF features
 
 ---
@@ -104,15 +107,15 @@ model.fit(X_train, y_train)
 ## 📊 Evaluation Results
 
 ```
-Accuracy: 0.75
-
 Classification Report:
               precision    recall  f1-score   support
-           1       0.78      0.69      0.73       250
-           2       0.65      0.60      0.62       230
-           3       0.68      0.74      0.71       300
-           4       0.80      0.81      0.80       320
-           5       0.85      0.87      0.86       400
+
+           0       0.84      0.62      0.71       597
+           1       0.85      0.95      0.90      1403
+
+    accuracy                           0.85      2000
+   macro avg       0.85      0.78      0.81      2000
+weighted avg       0.85      0.85      0.84      2000
 ```
 
 ---
@@ -121,11 +124,12 @@ Classification Report:
 
 | Model               | Accuracy |
 |--------------------|----------|
-| Logistic Regression | 75%      |
-| Naive Bayes         | 71%      |
+| Logistic Regression | 54%      |
+| Random Forest         |47%      |
 | SVM (Linear)        | 73%      |
 
 > Logistic Regression offered the best performance with minimal training time.
+**After Binary Classification Accuracy Of Logistic Regression Will be 85%**
 
 ---
 
