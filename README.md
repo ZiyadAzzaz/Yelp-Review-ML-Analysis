@@ -105,7 +105,7 @@ model.fit(X_train, y_train)
 ---
 
 ## 📊 Evaluation Results
-
+This Report After we make our starts into 2 Classes
 ```
 Classification Report:
               precision    recall  f1-score   support
@@ -121,6 +121,7 @@ weighted avg       0.85      0.85      0.84      2000
 ---
 
 ## 🤖 Model Comparison
+Before Convert To Classes
 
 | Model               | Accuracy |
 |--------------------|----------|
