@@ -126,7 +126,7 @@ weighted avg       0.85      0.85      0.84      2000
 |--------------------|----------|
 | Logistic Regression | 54%      |
 | Random Forest         |47%      |
-| SVM (Linear)        | 73%      |
+
 
 > Logistic Regression offered the best performance with minimal training time.
 **After Binary Classification Accuracy Of Logistic Regression Will be 85%**
