@@ -23,7 +23,7 @@
 - [📈 Business Insights](#-business-insights)
 - [🌍 Real-World Use Cases](#-real-world-use-cases)
 - [📊 Model Discussion](#-model-discussion)
-- [🛠️ How to Run](#how-to-run)
+- [🛠️ How to Run](#-how-to-run)
 - [🎯 Learning Objectives](#-learning-objectives)
 - [📄 License](#-license)
 - [🙋‍♂️ Author](#-author)
