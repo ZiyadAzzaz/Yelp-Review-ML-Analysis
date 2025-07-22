@@ -173,7 +173,7 @@ Yelp-Review-ML-Analysis/
 
 ## 📊 Model Discussion
 
-The model achieved around 75% accuracy, which is reasonable for multi-class text classification.
+The model achieved around 85% accuracy, which is reasonable for multi-class text classification.
 Slight confusion occurred between classes 2–3, which is expected due to overlapping sentiment language.
 
 Improvements could include:
@@ -186,7 +186,7 @@ Improvements could include:
 ## 🛠️ How to Run
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Yelp-Review-ML-Analysis.git
+git clone https://github.com/ZiyadAzzaz/Yelp-Review-ML-Analysis.git
 cd Yelp-Review-ML-Analysis
 jupyter notebook Yelp_Review_Analysis.ipynb
 ```
